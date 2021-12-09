@@ -1,0 +1,11 @@
+header{
+    background-color: tomato;
+}
+
+header .main-container-nav .main-container-nav--logo {
+    order: 1;
+  }
+
+  header .main-container-nav .main-contenedor-nav-btn {
+    order: 2;
+  }

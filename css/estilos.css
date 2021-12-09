@@ -1,0 +1,284 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'IM Fell French Canon', serif;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+}
+header h2 {
+  font-size: 30px;
+}
+
+header a {
+  color: black;
+  display: none;
+  text-decoration: none;
+  padding: 1.5rem;
+}
+
+header .main-container-nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 90%;
+  min-width: 320px;
+  height: inherit;
+}
+
+header .main-container-nav .main-container-nav--logo {
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+}
+
+header .main-container-nav .main-contenedor-nav-btn {
+  background-image: url(../img/boton-menu.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+}
+
+/* estilos seccion slider */
+
+.main-section-slider{
+    width: 100%;
+    height: auto;
+}
+
+.main-section-slider .main-section-container-slider{
+    background-image: url(../img/slide1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+
+
+/* estilos main */
+main{
+    width: 100%;
+    height: auto;
+}
+
+main .main-section-proyectos{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    min-width: 320px;
+    padding-top: 3rem;
+    text-align: center;
+    
+
+}
+
+main .main-section-proyectos h2{
+    font-size: 2.5rem;
+    
+    font-weight: 700;
+    line-height: 1.9rem;
+    padding-bottom: 1.5rem;
+
+}
+main .main-section-proyectos p{
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+
+}
+
+main .main-section-proyectos .main-section-proyectos-catalogos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+main .main-section-proyectos .main-section-proyectos-img{
+    background-color: yellow;
+    width: 48%;
+    height: 150px;
+    margin-bottom: 1.5rem;
+    
+    
+    
+
+}
+
+main .main-section-proyectos .main-section-proyectos-img:nth-child(1){
+    background-image: url(../img/imagen9.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+
+}
+
+main .main-section-proyectos .main-section-proyectos-img:nth-child(2){
+    background-image: url(../img/imagen20.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+
+}
+
+main .main-section-proyectos .main-section-proyectos-img:nth-child(3){
+    background-image: url(../img/imagen4.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+
+}
+
+main .main-section-proyectos .main-section-proyectos-img:nth-child(4){
+    background-image: url(../img/imagen25.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+
+}
+
+
+/* seccion quienes somos */
+.main-section-quienes-somos{
+    width: 100%;
+    height: auto;
+}
+
+.main-section-quienes-somos .quienes-somos--article{
+    width: 90%;
+    min-width: 320px;
+    height: auto;
+    text-align: justify;
+    padding: 1.5rem;
+}
+
+.main-section-quienes-somos .quienes-somos--article h2{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    text-align: center;
+}
+
+.main-section-quienes-somos .quienes-somos--article p{
+    font-size: 18px;
+}
+
+/* main seccion redes sociales */
+
+.main-section-redes-sociales{
+    width: 100%;
+    height: auto;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.redes-sociales-container{
+    width: 90%;
+    min-width: 320px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.redes-sociales-container h3{
+    font-size: 20px;
+    padding-bottom: 2rem;
+    line-height: 2rem;
+}
+
+.redes-sociales-container p{
+    
+    padding-bottom: 2rem;
+    
+}
+
+.container-imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    
+}
+
+.main-section-redes-sociales .section-redes-img{
+    width: 48%;
+    
+    height: 50%;
+}
+.main-section-redes-sociales .section-redes-img .section-redes-img--img{
+
+    width: 100%;
+
+}
+
+.main-iconos-redes{
+    width: 100%;
+    height: 10vh;
+    
+}
+
+.iconos-redes-container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.8rem;
+    
+}
+
+.iconos-redes-container a{
+    color: aliceblue;
+    
+    
+}
+
+.iconos-redes-container i{
+    font-size: 25px;
+    padding: .5rem;
+    
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 15vh;
+}
+
+.main-footer{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-footer a{
+    padding-top: 1rem;
+    padding-bottom: 1rem ;
+    font-size: 22px;
+}
+
+.main-footer span{
+    padding-bottom: 2rem ;
+    font-size: 22px;
+}
+
