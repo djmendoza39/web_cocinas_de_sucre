@@ -1,11 +1,78 @@
-header{
-    background-color: tomato;
+.main-section-slider .main-section-container-slider{
+  background-image: url(../img/img-slide2.jpg);
+    
+    height: 56vh;
+    
 }
 
-header .main-container-nav .main-container-nav--logo {
-    order: 1;
-  }
+main .main-section-proyectos h2{
+  font-size: 3rem;
 
-  header .main-container-nav .main-contenedor-nav-btn {
-    order: 2;
-  }
+}
+
+main .main-section-proyectos .main-section-proyectos-catalogos{
+  width: 92%;
+}
+main .main-section-proyectos .main-section-proyectos-catalogos .main-section-proyectos-img{
+  width: 22%;
+  
+  
+}
+
+.main-section-proyectos-img--img{
+  height: 80%;
+  
+}
+
+.main .main-section-proyectos .main-section-proyectos-catalogos{
+  max-width: 988px;
+}
+
+.main-section-quienes-somos{
+  background-color: rgba(15, 182, 71, 0.473);
+  height: 30vh;
+  
+  
+}
+
+
+.main-section-quienes-somos .quienes-somos--article{
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  
+  height: inherit;
+  
+  
+}
+
+.main-section-quienes-somos .quienes-somos--article h2{
+  flex: 1 1 40%;
+}
+
+.main-section-quienes-somos .quienes-somos--article p{
+  font-size: 1.2rem;
+  flex: 2 1 60%;
+  
+}
+
+
+/* seccion redes sociales */
+
+.redes-sociales-container h3{
+  padding-top: 2rem;
+  font-size: 32px;
+}
+
+.container-imagenes{
+  flex-direction: row;
+  justify-content: center;
+  
+  
+}
+
+.container-imagenes .section-redes-img{
+  width: 14%;
+  
+}

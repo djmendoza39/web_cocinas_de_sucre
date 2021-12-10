@@ -11,32 +11,51 @@ body{
 header {
   height: 80px;
   width: 100%;
+  
 }
+
+header .main-container-nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90%;
+    min-width: 320px;
+    height: inherit;
+  }
+
+
 header h2 {
   font-size: 30px;
 }
 
-header a {
+header .main-contenedor-nav-rigth{
+    display: none;
+}
+header .main-contenedor-nav-left{
+    display: none;
+}
+header .main-contenedor-nav-left a {
   color: black;
-  display: none;
+  font-size: 18px;
   text-decoration: none;
   padding: 1.5rem;
 }
 
-header .main-container-nav {
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-  width: 90%;
-  min-width: 320px;
-  height: inherit;
-}
+header .main-contenedor-nav-rigth a {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 1.5rem;
+  }
+
+
 
 header .main-container-nav .main-container-nav--logo {
   border-radius: 100%;
   height: 40px;
   width: 40px;
+  margin-left: 1rem;
 }
 
 header .main-container-nav .main-contenedor-nav-btn {
@@ -47,6 +66,7 @@ header .main-container-nav .main-contenedor-nav-btn {
   cursor: pointer;
   height: 40px;
   width: 40px;
+  margin-right: 1rem;
 }
 
 /* estilos seccion slider */
@@ -74,110 +94,82 @@ main{
 }
 
 main .main-section-proyectos{
-    width: 50%;
+    width: inherit;
     height: auto;
-    margin: 0 auto;
-    min-width: 320px;
-    padding-top: 3rem;
-    text-align: center;
     
-
 }
 
 main .main-section-proyectos h2{
-    font-size: 2.5rem;
-    
-    font-weight: 700;
-    line-height: 1.9rem;
-    padding-bottom: 1.5rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
 
 }
+
 main .main-section-proyectos p{
-    font-size: 1.5rem;
-    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    
 
 }
 
 main .main-section-proyectos .main-section-proyectos-catalogos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    
     width: 90%;
+    min-width: 300px;
+    height: auto;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap:.5rem
+    
 
+
+    
 }
 
-main .main-section-proyectos .main-section-proyectos-img{
-    background-color: yellow;
+main .main-section-proyectos .main-section-proyectos-catalogos .main-section-proyectos-img{
     width: 48%;
-    height: 150px;
-    margin-bottom: 1.5rem;
+    margin: 0 auto;
+    height: auto;
     
-    
-    
-
 }
 
-main .main-section-proyectos .main-section-proyectos-img:nth-child(1){
-    background-image: url(../img/imagen9.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.main-section-proyectos-img--img{
+    width: 100%;
+    height: 90%;
     
     
-
-}
-
-main .main-section-proyectos .main-section-proyectos-img:nth-child(2){
-    background-image: url(../img/imagen20.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    
-
-}
-
-main .main-section-proyectos .main-section-proyectos-img:nth-child(3){
-    background-image: url(../img/imagen4.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    
-
-}
-
-main .main-section-proyectos .main-section-proyectos-img:nth-child(4){
-    background-image: url(../img/imagen25.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    
-
 }
 
 
 /* seccion quienes somos */
 .main-section-quienes-somos{
+    margin-top: 4.5rem;
     width: 100%;
+    background-color: #f5c61e8f;
     height: auto;
+    
+    
 }
+
 
 .main-section-quienes-somos .quienes-somos--article{
     width: 90%;
     min-width: 320px;
     height: auto;
-    text-align: justify;
+    text-align: center;
     padding: 1.5rem;
+    margin: 0 auto;
+    padding-bottom: 3.4rem;
 }
 
 .main-section-quienes-somos .quienes-somos--article h2{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-    text-align: center;
+    
 }
 
 .main-section-quienes-somos .quienes-somos--article p{
@@ -195,14 +187,14 @@ main .main-section-proyectos .main-section-proyectos-img:nth-child(4){
 
 .redes-sociales-container{
     width: 90%;
-    min-width: 320px;
+    min-width: 300px;
     height: auto;
     margin: 0 auto;
 }
 
 .redes-sociales-container h3{
-    font-size: 20px;
-    padding-bottom: 2rem;
+    font-size: 24px;
+    padding-bottom: 1rem;
     line-height: 2rem;
 }
 
@@ -215,14 +207,16 @@ main .main-section-proyectos .main-section-proyectos-img:nth-child(4){
 .container-imagenes{
     display: flex;
     flex-wrap: wrap;
-    gap: .5rem;
+    gap: 1rem;
+    width: 100%;
+    
     
 }
 
 .main-section-redes-sociales .section-redes-img{
     width: 48%;
-    
     height: 50%;
+    /* box-shadow:  2px 2px 0px rgba(0,0,0,0.14) , 0px 3px 1px -2px rgba(0,0,0,0.12) , 0px 1px 5px 0px rgba(0,0,0,0.2)  */
 }
 .main-section-redes-sociales .section-redes-img .section-redes-img--img{
 
@@ -239,7 +233,8 @@ main .main-section-proyectos .main-section-proyectos-img:nth-child(4){
 .iconos-redes-container{
     width: 90%;
     margin: 0 auto;
-    padding: 1.8rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem ;
     
 }
 
@@ -255,10 +250,17 @@ main .main-section-proyectos .main-section-proyectos-img:nth-child(4){
     
 }
 
+i{
+    color: #232021;
+    
+}
+
 /* footer */
 footer{
+    padding-top: 1rem;
     width: 100%;
-    height: 15vh;
+    height: 20vh;
+    background-color: #232021;
 }
 
 .main-footer{
