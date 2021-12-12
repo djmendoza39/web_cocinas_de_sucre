@@ -1,54 +1,41 @@
+
+
 header {
-    height: 100px;
+    height: 80px;
     
     
   }
+
+  .label-boton, #checkBoton{
+    display: none;
+  }
+
+  
+
 
 header .main-container-nav {
     
-    width: 98%;
+    width: 90%;
     
   }
 
-header .main-container-nav .main-container-nav-logo{
-    flex: 1;
-    order:2;
-    
-    text-align: center;
-}
 header .main-container-nav .main-container-nav--logo {
     
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     margin-left: 0px;
     
   }
 header .main-container-nav .main-contenedor-nav-left{
-    order:1;
-    flex: 2;
     
-    display: block;
-    text-align: center;
-}
-
-header .main-container-nav .main-contenedor-nav-rigth{
-    order:3;
-    display: block;
-    flex: 2;
+    display: flex;
+    justify-content: space-between;
     
-    text-align: center;
 }
-
-header .main-container-nav .main-contenedor-nav-btn{
-    
-    display: none;
-}
-
 
 .main-section-slider .main-section-container-slider{
     background-image: url(../img/img-slide.jpg);
-      
-      height: 68vh;
+    height: 80vh;
       
   }
 

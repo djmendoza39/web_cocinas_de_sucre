@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
 
 body{
@@ -9,8 +11,15 @@ body{
 }
 
 header {
-  height: 80px;
+  height: 60px;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: rgb(255, 255, 255);
+  
   
 }
 
@@ -22,6 +31,7 @@ header .main-container-nav {
     width: 90%;
     min-width: 320px;
     height: inherit;
+    
   }
 
 
@@ -29,12 +39,9 @@ header h2 {
   font-size: 30px;
 }
 
-header .main-contenedor-nav-rigth{
+/* header .main-contenedor-nav-left{
     display: none;
-}
-header .main-contenedor-nav-left{
-    display: none;
-}
+} */
 header .main-contenedor-nav-left a {
   color: black;
   font-size: 18px;
@@ -53,21 +60,16 @@ header .main-contenedor-nav-rigth a {
 
 header .main-container-nav .main-container-nav--logo {
   border-radius: 100%;
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
   margin-left: 1rem;
 }
 
-header .main-container-nav .main-contenedor-nav-btn {
-  background-image: url(../img/boton-menu.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  cursor: pointer;
-  height: 40px;
-  width: 40px;
-  margin-right: 1rem;
+.estilos-boton{
+    margin-right: 1rem;
 }
+
+
 
 /* estilos seccion slider */
 
@@ -83,7 +85,7 @@ header .main-container-nav .main-contenedor-nav-btn {
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 50vh;
+    height: 64vh;
 }
 
 
@@ -221,7 +223,8 @@ main .main-section-proyectos .main-section-proyectos-catalogos .main-section-pro
 }
 .main-section-redes-sociales .section-redes-img .section-redes-img--img{
 
-    width: 100%;
+    width: 92%;
+    border: 1px solid;
 
 }
 
