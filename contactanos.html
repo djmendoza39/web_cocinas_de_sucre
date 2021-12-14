@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        a{
+            text-decoration: none;
+            display: block;
+        }
+        .seccion-contactanos{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+
+        .seccion-contactanos__container{
+            
+            width: 320px;
+            
+        }
+        .seccion-contactanos__container figure {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            margin-bottom: 1.5rem;
+        }
+        .seccion-contactanos__container figure img {
+            width: 100%;
+            
+        }
+        label{
+            display: block;
+            font-size: 1.5rem;
+            text-align: center;
+            
+        }
+        input{
+            background-color: rgba(209, 207, 207, 0.698);
+            color: rgb(34, 65, 43);
+            display: block;
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input:nth-child(2){
+            margin-top: 1rem;
+            
+            
+        }
+
+        input:nth-child(6){
+            background-color: rgb(20, 246, 69);
+            font-size: 1rem;
+            width: 70%;
+            border: none;
+            cursor: pointer;
+            box-shadow:  10px 15px -3px rgba(0,0,0,0.1) , 0px 4px 6px -2px rgba(0,0,0,0.05) ;  
+        }
+
+
+
+        .seccion-contactanos__container-redes{
+            width: 100%;
+        }
+        .seccion-contactanos__container-redes .link-wp{
+            padding: 1rem;
+            width: 100%;
+            text-align: center;
+            border:  solid green;
+            font-size: 20px;
+            margin-top: 1.5rem;
+        }
+        .seccion-contactanos__container-redes .link-ins{
+            padding: 1rem;
+            width: 100%;
+            text-align: center;
+            border:solid rgb(125, 4, 146);
+            font-size: 20px;
+            margin-top: .8rem;
+            
+        }
+
+        .bi-whatsapp{
+            
+            margin-right: .5rem;
+            color: rgb(23, 214, 6);
+            font-size: 1.5rem;
+        }
+        .bi-instagram{
+            margin-right: .5rem;
+            color: rgb(190, 6, 214);
+            font-size: 1.5rem;
+        }
+
+        footer{
+            margin-top: 2.3rem;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        footer .container-flex{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            padding: 1.5rem;
+
+        }
+
+        footer .container-flex .container-flex__section{
+            width: 50%;
+        }
+
+        footer .container-flex .container-flex__section{
+            width: 50%;
+        }
+
+        footer .container-flex .container-flex__section p:nth-child(1){
+            margin-bottom: 1rem;
+        }
+
+        .container-flex__section-redes{
+            width: 30%;
+           text-align: end;
+           
+        }
+
+        .container-flex__section-redes p{
+
+            margin-top: 1rem;
+            
+           
+        }
+    </style>
+</head>
+<body>
+
+    <section class="seccion-contactanos">
+        <div class="seccion-contactanos__container">
+            <figure>
+                <a href="index.html"><img src="img/logo.png" alt="Logo Principal"> </a>
+                               
+            </figure>
+            <form action="">
+                <label for="">Contáctanos</label>
+                <input type="text" placeholder="Nombres" name="nombre" id="input_nombre">
+                <input type="text" placeholder="Apellidos" name="apellidos" id="input_ape">
+                <input type="text" placeholder="Número telefónico" name="telefono" id="input_telefono">
+                <input type="email" placeholder="Email" name="email" id="input_email">
+                <input type="button" value="Enviar datos">
+            </form>
+
+            <div class="seccion-contactanos__container-redes">
+                <hr>
+                <p>ó</p>
+                <a class="link-wp" href=""> <i class="bi bi-whatsapp"></i>Contactanos via Whatsapp</a>
+                <a class="link-ins" href=""><i class="bi bi-instagram"></i>Contactanos via Instagram</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="container-flex">
+            <section class="container-flex__section">
+                <p>Términos y condiciones-Paute con nosotros -Habeas data -Contáctenos -Beneficios suscriptor-www.sic.gov.co (Entidad de protección del consumidor)</p>
+                <p>Todos las marcas registradas son propiedad de la compañía respectiva o de PUBLICACIONES SEMANA S.A. con NIT 860.509.265 -1. Se prohíbe la reproducción total o parcial de cualquiera de los contenidos que aquí aparezca, así como su traducción a cualquier idioma sin autorización escrita de su titular.</p>
+    
+            </section>
+            <section class="container-flex__section-redes" >
+    
+                <div class="redes">
+                    <span>Siganos en:</span>
+                    <i class="bi bi-whatsapp">
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-youtube"></i>
+                    </i>
+                </div>
+                <p>Copyright © 2020 Publicaciones Semana S.A.
+                    con NIT 860.509.265 -1.</p>
+    
+            </section>
+        </div>
+        
+    </footer>
+    
+    
+</body>
+</html>
