@@ -13,12 +13,8 @@ body{
 header {
   height: 60px;
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  background-color: rgb(255, 255, 255);
+  
+  /* background-color: rgb(255, 255, 255); */
   
   
 }
@@ -75,19 +71,54 @@ header .main-container-nav .main-container-nav--logo {
 
 .main-section-slider{
     width: 100%;
-    height: auto;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+
+
 .main-section-slider .main-section-container-slider{
-    background-image: url(../img/slide1.jpg);
-    background-position: center;
+    background-image: url(../img/slide/slide1.jpg);
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 64vh;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.main-section-container-slider .contenedor-slider-titulo{
+    width: 80%;
+
+}
+.main-section-container-slider .contenedor-slider-titulo h1{
+
+    font-size: 2.5rem;
+    margin-bottom: .3rem;
+
 }
 
+.main-section-container-slider .contenedor-slider-titulo p{
+
+    font-size: 1.5rem;
+
+}
+
+.main-section-container-slider .contenedor-slider-titulo a{
+
+    font-size: 1rem;
+    display: inline-block;
+    background-color: aquamarine;
+    padding: .7rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+
+}
 
 /* estilos main */
 main{
@@ -137,12 +168,15 @@ main .main-section-proyectos .main-section-proyectos-catalogos .main-section-pro
     width: 48%;
     margin: 0 auto;
     height: auto;
+
+    
     
 }
 
 .main-section-proyectos-img--img{
     width: 100%;
     height: 90%;
+    object-fit: cover;
     
     
 }
