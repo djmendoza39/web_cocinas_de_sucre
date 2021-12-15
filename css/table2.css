@@ -1,7 +1,19 @@
+
+
+
+
 .main-section-slider{
     
     height: 60vh;
     
+}
+
+.main-section-slider .main-section-container-slider{
+    background-image: url(../img/slide/slide3.jpg);
+    
+    
+    
+   
 }
 
 

@@ -289,7 +289,8 @@ main .main-section-proyectos .main-section-proyectos-catalogos .main-section-pro
 
 .main-section-quienes-somos .quienes-somos--article{
     width: 90%;
-    
+    min-width: 320px;
+    max-width: 988px;
     height: auto;
     text-align: center;
     padding: 1.5rem;
@@ -307,8 +308,8 @@ main .main-section-proyectos .main-section-proyectos-catalogos .main-section-pro
 .main-section-quienes-somos .quienes-somos--article p{
     font-size: 22px;
     width: 90%;
-    max-width: 800px;
-    min-width: 320px;
+    margin: 0 auto;
+    
     
 }
 
@@ -366,7 +367,7 @@ main .main-section-proyectos .main-section-proyectos-catalogos .main-section-pro
 .section-mision-vision * p{
     text-align: justify;
     font-size: 20px;
-    overflow:scroll;
+    overflow:none scroll;
     height: 150px;
 
     max-width: 800px;

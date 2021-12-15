@@ -1,3 +1,16 @@
+
+.main-section-slider{
+    
+    height: 70vh;
+    
+}
+
+.main-section-slider .main-section-container-slider{
+    background-image: url(../img/slide/slide2.jpg);
+    
+}
+
+
 main .main-section-proyectos .main-section-proyectos-catalogos{
     
     flex-wrap: nowrap;
