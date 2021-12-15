@@ -77,3 +77,8 @@ main .main-section-proyectos .main-section-proyectos-catalogos .main-section-pro
   width: 12%;
 
 }
+
+.section-masProyectos section{
+  flex-direction: column;
+  flex-wrap: nowrap;
+}

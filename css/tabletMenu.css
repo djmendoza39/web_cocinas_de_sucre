@@ -56,3 +56,10 @@ header .main-container-nav .main-contenedor-nav-left li a:hover{
 #checkBoton{
     display: none;
 }
+
+main .main-section-proyectos .main-section-proyectos-catalogos{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:.5rem;
+ 
+}

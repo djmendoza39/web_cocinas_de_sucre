@@ -1,0 +1,35 @@
+.main-section-slider{
+    
+    height: 60vh;
+    
+}
+
+
+main .main-section-proyectos .main-section-proyectos-catalogos{
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+}
+
+main .main-section-proyectos .main-section-proyectos-catalogos .main-section-proyectos-img{
+    width: 48%;
+    
+   
+}
+
+.main-section-proyectos-img--img{
+    width: 100%;
+}
+
+
+
+.section-masProyectos__card figure{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-img__title a{
+    width: 70%;
+    margin: 0 auto;
+}

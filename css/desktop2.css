@@ -1,0 +1,40 @@
+main .main-section-proyectos .main-section-proyectos-catalogos{
+    
+    flex-wrap: nowrap;
+    
+    
+}
+
+
+
+
+
+main .main-section-proyectos .main-section-proyectos-catalogos .main-section-proyectos-img{
+    width: 48%;
+}
+
+.main-section-proyectos-img--img{
+    width: 100%;
+}
+
+.section-masProyectos__card{
+    width: 100%;
+}
+
+.section-masProyectos section{
+    flex-direction: row;
+    
+    
+  }
+
+
+.section-masProyectos__card figure{
+    width: 33.3%;
+    
+}
+
+.section-masProyectos__card figure img{
+    width: 100%;
+    
+}
+

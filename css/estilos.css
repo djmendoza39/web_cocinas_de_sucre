@@ -11,7 +11,7 @@ body{
 }
 
 header {
-  height: 60px;
+  height: 70px;
   width: 100%;
   
   /* background-color: rgb(255, 255, 255); */
@@ -51,6 +51,70 @@ header .main-contenedor-nav-rigth a {
     text-decoration: none;
     padding: 1.5rem;
   }
+
+/* estilos menu */
+#checkBoton:checked ~ .main-contenedor-nav-left{
+    left: 0;
+}
+
+header .main-container-nav .main-contenedor-nav-left li a{
+    font-size: 1.5rem;
+    display: block;
+    padding: 1.5rem;
+    color: #e4ffb9;
+}
+
+.estilos-boton{
+    background-color: #93C63E;
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.estilos-boton i{
+    
+    font-size: 1.5rem;
+    color: #e4ffb9;
+    cursor: pointer;
+    
+}
+
+
+header .main-container-nav .main-contenedor-nav-left li a:hover{
+    background-color: #92c63e93;
+    color: aliceblue;
+    transition: all 0.6s ease;
+    
+}
+
+.main-contenedor-nav-left{
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #000000d7;
+    transition: all .3s ease-in;
+    text-align: center;
+    z-index: 2;
+    
+}
+
+#checkBoton{
+    display: none;
+}
+
+main .main-section-proyectos .main-section-proyectos-catalogos{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:.5rem;
+ 
+}
+
+/*  */
 
 
 
@@ -111,6 +175,7 @@ header .main-container-nav .main-container-nav--logo {
 .main-section-container-slider .contenedor-slider-titulo{
     width: 80%;
     min-width: 320px;
+    
     z-index: 1;
     margin-left: 1rem;
 
@@ -175,16 +240,12 @@ main .main-section-proyectos .main-section-proyectos-catalogos{
     
     width: 90%;
     min-width: 300px;
+    
     height: auto;
     margin: 0 auto;
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
-    gap:.5rem;
-    
-    
-
-
     
 }
 
@@ -192,14 +253,26 @@ main .main-section-proyectos .main-section-proyectos-catalogos .main-section-pro
     width: 90%;
     margin: 0 auto;
     height: auto;
+    position: relative;
+    margin-bottom: 1rem;
    
 }
 
+.main-section-proyectos-img::before{
 
+    content: "";
+    width: 100%;
+    background-color: #0e16003b;
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+
+}
 
 .main-section-proyectos-img--img{
     width: 100%;
-    height: 90%;
+    height: 100%;
     object-fit: cover;  
 }
 
@@ -216,7 +289,7 @@ main .main-section-proyectos .main-section-proyectos-catalogos .main-section-pro
 
 .main-section-quienes-somos .quienes-somos--article{
     width: 90%;
-    min-width: 320px;
+    
     height: auto;
     text-align: center;
     padding: 1.5rem;
@@ -228,118 +301,231 @@ main .main-section-proyectos .main-section-proyectos-catalogos .main-section-pro
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
     
+    
 }
 
 .main-section-quienes-somos .quienes-somos--article p{
-    font-size: 18px;
-}
-
-/* main seccion redes sociales */
-
-.main-section-redes-sociales{
-    width: 100%;
-    height: auto;
-    padding-top: 3rem;
-    text-align: center;
-}
-
-.redes-sociales-container{
+    font-size: 22px;
     width: 90%;
-    min-width: 300px;
-    height: auto;
-    margin: 0 auto;
-}
-
-.redes-sociales-container h3{
-    font-size: 24px;
-    padding-bottom: 1rem;
-    line-height: 2rem;
-}
-
-.redes-sociales-container p{
-    
-    padding-bottom: 2rem;
+    max-width: 800px;
+    min-width: 320px;
     
 }
 
-.container-imagenes{
-    display: flex;
-    flex-wrap: wrap;
-    gap: .5rem;
+/* seccion mision vision */
+
+.main-section-vision-mision{
     width: 100%;
+    height: 80vh;
+    background-image: url("../img/img-proyectos/imagen22.jpeg");
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: padding-box;
+    background-attachment: fixed;
+    position: relative;
     
-    
 }
 
-.main-section-redes-sociales .section-redes-img{
-    width: 48%;
-    height: 50%;
-    /* box-shadow:  2px 2px 0px rgba(0,0,0,0.14) , 0px 3px 1px -2px rgba(0,0,0,0.12) , 0px 1px 5px 0px rgba(0,0,0,0.2)  */
-}
-.main-section-redes-sociales .section-redes-img .section-redes-img--img{
-
-    width: 92%;
-    border: 1px solid;
-
-}
-
-.main-iconos-redes{
+.main-section-vision-mision::before{
+    content: "";
     width: 100%;
-    height: 10vh;
-    
+    background-color: #00000060;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
 }
 
-.iconos-redes-container{
+
+.section-mision-vision{
+    color: #ffffff;
     width: 90%;
     margin: 0 auto;
-    padding-top: 2rem;
-    padding-bottom: 3rem ;
-    
-}
-
-.iconos-redes-container a{
-    color: aliceblue;
-    
-    
-}
-
-.iconos-redes-container i{
-    font-size: 25px;
-    padding: .5rem;
-    
-}
-
-i{
-    color: #232021;
-    
-}
-
-/* footer */
-footer{
-    padding-top: 1rem;
-    width: 100%;
-    height: auto;
-    background-color: #232021;
-}
-
-.main-footer{
-    width: 90%;
-    margin: 0 auto;
+    height: inherit;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    
+}
+
+.main-section-article-mision, .main-section-article-vision{
+    z-index: 2;
+}
+
+
+.section-mision-vision * h2{
+    text-align: center;
+    font-size: 30px;
+    padding: 1.5rem 0 1rem;
+}
+
+.section-mision-vision * p{
+    text-align: justify;
+    font-size: 20px;
+    overflow:scroll;
+    height: 150px;
+
+    max-width: 800px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+/* seccion mas proyectos */
+
+.section-masProyectos{
+    /* background-color: #BDBEBF; */
+    width: 100%;
+    min-width: 310px;
+    
+  }
+
+  .section-masProyectos section{
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+    
+    
+  }
+
+  .container-img{
+      order:1;
+  }
+
+
+  .section-masProyectos section .container-img .figure-img{
+    width: 100%;
+    height: auto;
+    flex: 1 0 40%;
+    
+  }
+
+  .section-masProyectos__card{
+      background-color: #BDBEBF;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 1.4rem;
+    
+    
+    
+  }
+  
+  .section-masProyectos__card img{
+    width: 100%;
+  
+  }
+  .section-masProyectos section .container-img__title {
+    
+    flex: 2 1 60%;
+    padding-top: 1.5rem;
+    text-align: center;
+    
+  }
+
+  .section-masProyectos section .container-img__title h3{
+    font-size: 1.5rem;
+    line-height: 54px;
+    
+  }
+
+  .section-masProyectos section .container-img__title p{
+    font-size: 1.3rem;
+    line-height: 54px;
+    max-width: 800px;
+    min-width: 320px;
+    margin: 0 auto;
+    
+  }
+
+  .section-masProyectos section .container-img__title a{
+    
+    display: block;
+    padding: 1rem;
+    background-color: #78be08;
+    border: solid 1px;
+    color: #ffffff;
+    font-size: 22px;
+    
+  }
+
+
+
+
+
+/* footer */
+
+.bi-whatsapp{
+    margin-left: .5rem;      
+    color: rgb(23, 214, 6);
+    font-size: 1.5rem;
+}
+.bi-instagram{
+    
+    color: rgb(190, 6, 214);
+    font-size: 1.5rem;
+}
+.bi-facebook{
+    
+    color: rgb(6, 20, 214);
+    font-size: 1.5rem;
+}
+
+.bi-youtube{
+    
+    color: rgb(214, 6, 34);
+    font-size: 1.5rem;
+}
+footer{
+    margin-top: 2.3rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14) , 0px 3px 1px -2px rgba(0,0,0,0.12) , 0px 0px 5px 0px rgba(0,0,0,0.2) ;
+}
+
+footer .container-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 1.5rem;
+
+}
+
+.container-flex__section{
+    width: 100%;
     text-align: center;
 }
 
-.main-footer a{
-    padding-top: 1rem;
-    padding-bottom: 1rem ;
-    font-size: 22px;
+.container-flex__section img{
+    width: 100px;
+    height: 100px;
+    
+    
 }
 
-.main-footer span{
-    padding-bottom: 2rem ;
-    font-size: 22px;
+.container-flex__section-redes{
+    height: 5vh;
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+    max-width: 1024px;
 }
+
+
 
