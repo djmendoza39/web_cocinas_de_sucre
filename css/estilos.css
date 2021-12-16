@@ -183,7 +183,7 @@ header .main-container-nav .main-container-nav--logo {
 }
 .main-section-container-slider .contenedor-slider-titulo h1{
     
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: .3rem;
     color: floralwhite;
 
@@ -404,7 +404,7 @@ main .main-section-proyectos .main-section-proyectos-catalogos .main-section-pro
   }
 
   .section-masProyectos__card{
-      background-color: #BDBEBF;
+      background-color: #dfebe9cc;
     width: 90%;
     height: auto;
     margin: 0 auto;
