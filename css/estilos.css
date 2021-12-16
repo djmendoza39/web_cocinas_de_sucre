@@ -6,8 +6,9 @@
     list-style: none;
 }
 
-body{
-    font-family: 'IM Fell French Canon', serif;
+
+html{
+    font-family: 'Open Sans', sans-serif;
 }
 
 header {
@@ -280,7 +281,7 @@ main .main-section-proyectos .main-section-proyectos-catalogos .main-section-pro
 .main-section-quienes-somos{
     margin-top: 4.5rem;
     width: 100%;
-    background-color: #f5c61e8f;
+    background-color: #f8d5548f;
     height: auto;
     
     
@@ -301,6 +302,7 @@ main .main-section-proyectos .main-section-proyectos-catalogos .main-section-pro
 .main-section-quienes-somos .quienes-somos--article h2{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+    font-size: 27px;
     
     
 }
@@ -314,66 +316,57 @@ main .main-section-proyectos .main-section-proyectos-catalogos .main-section-pro
 }
 
 /* seccion mision vision */
-
 .main-section-vision-mision{
     width: 100%;
-    height: 80vh;
-    background-image: url("../img/img-proyectos/imagen22.jpeg");
-    background-position:center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-clip: padding-box;
-    background-attachment: fixed;
-    position: relative;
-    
-}
-
-.main-section-vision-mision::before{
-    content: "";
-    width: 100%;
-    background-color: #00000060;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-
-}
-
-
-.section-mision-vision{
-    color: #ffffff;
-    width: 90%;
-    margin: 0 auto;
-    height: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    
-}
-
-.main-section-article-mision, .main-section-article-vision{
-    z-index: 2;
-}
-
-
-.section-mision-vision * h2{
     text-align: center;
-    font-size: 30px;
-    padding: 1.5rem 0 1rem;
 }
 
-.section-mision-vision * p{
-    text-align: justify;
-    font-size: 20px;
-    overflow:none scroll;
-    height: 150px;
-
-    max-width: 800px;
-    min-width: 320px;
-    margin: 0 auto;
+.main-section-article-mision{
+    background-color: coral;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
 }
+
+.main-section-article-mision h2{
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.main-section-article-mision p{
+    
+    
+    padding: 3rem;   
+    font-size: 22px;
+    max-width: 920px;  
+    margin: 0 auto; 
+}
+
+
+
+.main-section-article-vision{
+    background-color: #aae053;
+    width: 100%;
+    height: auto;
+}
+
+
+.main-section-article-vision h2{
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.main-section-article-vision p{
+    
+    
+    font-size: 22px;
+    padding: 3rem;
+    max-width: 920px;  
+    margin: 0 auto; 
+}
+
 
 /* seccion mas proyectos */
 

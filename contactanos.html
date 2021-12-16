@@ -96,68 +96,70 @@
             
         }
 
-        .bi-whatsapp{
-            
-            margin-right: .5rem;
-            color: rgb(23, 214, 6);
-            font-size: 1.5rem;
-        }
-        .bi-instagram{
-            margin-right: .5rem;
-            color: rgb(190, 6, 214);
-            font-size: 1.5rem;
-        }
+        /* footer */
 
-        .bi-facebook{
-            margin-right: .5rem;
-            color: rgb(6, 27, 214);
-            font-size: 1.5rem;
-        }
+.bi-whatsapp{
+    margin-left: .5rem;      
+    color: rgb(23, 214, 6);
+    font-size: 1.5rem;
+}
+.bi-instagram{
+    
+    color: rgb(190, 6, 214);
+    font-size: 1.5rem;
+}
+.bi-facebook{
+    
+    color: rgb(6, 20, 214);
+    font-size: 1.5rem;
+}
 
-        footer{
-            margin-top: 2.3rem;
-            width: 100%;
-            height: auto;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
+.bi-youtube{
+    
+    color: rgb(214, 6, 34);
+    font-size: 1.5rem;
+}
+footer{
+    margin-top: 2.3rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14) , 0px 3px 1px -2px rgba(0,0,0,0.12) , 0px 0px 5px 0px rgba(0,0,0,0.2) ;
+}
 
-        footer .container-flex{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 100%;
-            height: auto;
-            margin: auto;
-            padding: 1.5rem;
+footer .container-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 1.5rem;
 
-        }
+}
 
-        footer .container-flex .container-flex__section{
-            width: 50%;
-        }
+.container-flex__section{
+    width: 100%;
+    text-align: center;
+}
 
-        footer .container-flex .container-flex__section{
-            width: 50%;
-        }
+.container-flex__section img{
+    width: 100px;
+    height: 100px;
+    
+    
+}
 
-        footer .container-flex .container-flex__section p:nth-child(1){
-            margin-bottom: 1rem;
-        }
-
-        .container-flex__section-redes{
-            width: 30%;
-           text-align: end;
-           
-        }
-
-        .container-flex__section-redes p{
-
-            margin-top: 1rem;
-            
-           
-        }
+.container-flex__section-redes{
+    height: 5vh;
+    margin-top: 1rem;
+    text-align: center;
+    width: 100%;
+    max-width: 1024px;
+}
     </style>
 </head>
 <body>
@@ -190,8 +192,7 @@
     <footer>
         <div class="container-flex">
             <section class="container-flex__section">
-                <p>Términos y condiciones-Paute con nosotros -Habeas data -Contáctenos -Beneficios suscriptor-www.sic.gov.co (Entidad de protección del consumidor)</p>
-                <p>Todos las marcas registradas son propiedad de la compañía respectiva o de PUBLICACIONES SEMANA S.A. con NIT 860.509.265 -1. Se prohíbe la reproducción total o parcial de cualquiera de los contenidos que aquí aparezca, así como su traducción a cualquier idioma sin autorización escrita de su titular.</p>
+                <img src="img/logo.png" alt="logo de la entidad">
     
             </section>
             <section class="container-flex__section-redes" >
@@ -204,10 +205,9 @@
                     <i class="bi bi-youtube"></i>
                     </i>
                 </div>
-                <p>Copyright © 2020 Publicaciones Semana S.A.
-                    con NIT 860.509.265 -1.</p>
-    
             </section>
+            <p>Copyright © 2020 Publicaciones Semana S.A.
+                con NIT 860.509.265 -1.</p>
         </div>
         
     </footer>

@@ -19,9 +19,6 @@ main .main-section-proyectos .main-section-proyectos-catalogos{
 }
 
 
-
-
-
 main .main-section-proyectos .main-section-proyectos-catalogos .main-section-proyectos-img{
     width: 48%;
 }
@@ -39,6 +36,15 @@ main .main-section-proyectos .main-section-proyectos-catalogos .main-section-pro
     
     
   }
+
+  .section-mision-vision{
+    
+    flex-direction: row;
+    gap: 2rem;
+    
+    
+    
+}
 
 
 .section-masProyectos__card figure{

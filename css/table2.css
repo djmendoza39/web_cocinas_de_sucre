@@ -10,10 +10,11 @@
 
 .main-section-slider .main-section-container-slider{
     background-image: url(../img/slide/slide3.jpg);
-    
-    
-    
-   
+  
+}
+
+.main-section-container-slider .contenedor-slider-titulo h1{
+    font-size: 3rem;
 }
 
 
