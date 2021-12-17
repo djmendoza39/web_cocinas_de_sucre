@@ -26,6 +26,7 @@ header .main-container-nav {
     justify-content: space-between;
     margin: 0 auto;
     width: 90%;
+    max-width: 1024px;
     min-width: 320px;
     height: inherit;
     

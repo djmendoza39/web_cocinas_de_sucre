@@ -11,9 +11,83 @@
     <link rel="stylesheet" href="./css/desktop2.css" media="(min-width:788px">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        
+
+        .main-section-grid {
+            width: 100%;
+            height: auto;
+
+        }
+
+        .main-container-grid {
+            width: 90%;
+            margin: 0 auto;
+            height: inherit;
+
+            min-width: 310px;
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .main-container-article {
+            width: 100%;
+            padding: 2rem;
+            background-color: #e5efed65;
+            box-shadow: 0px 16px 24px 2px rgba(0,0,0,0.14) , 0px 6px 30px 5px rgba(0,0,0,0.12) , 0px 8px 10px -7px rgba(0,0,0,0.2) ;
+
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+            border: none;
+            box-shadow: 0px 16px 24px 2px rgba(0,0,0,0.14) , 0px 6px 30px 5px rgba(0,0,0,0.12) , 0px 8px 10px -7px rgba(0,0,0,0.2) ;
+        }
+
+
+
+        @media (min-width: 450px) {
+            .main-container-grid {
+                flex-direction: row;
+                flex-wrap: wrap;
+
+            }
+
+            .main-container-article {
+                width: 48%;
+
+            }
+
+
+
+        }
+
+        @media (min-width: 680px) {
+            .main-container-grid {
+                
+                flex-wrap: wrap;
+                max-width: 1200px;
+
+            }
+
+            .main-container-article {
+                width: 30%;
+                
+
+            }
+
+
+
+        }
+    </style>
 </head>
 
 <body>
@@ -21,8 +95,11 @@
     <header>
         <nav class="main-container-nav">
             <figure class="main-container-nav-logo">
-                 
-                <img class="main-container-nav--logo" src="img/logo.png" alt="logo de la empresa">
+
+                <a href="index.html">
+                    <img class="main-container-nav--logo" src="img/logo.png" alt="logo de la empresa">
+
+                </a>
             </figure>
             <input type="checkbox" name="miBoton" id="checkBoton">
             <label for="checkBoton" id="miBoton" class="estilos-boton">
@@ -34,9 +111,9 @@
                 <li><a href="">Quienes somos</a></li>
                 <li><a href="contactanos.html">Contáctanos</a></li>
             </ul>
-            
 
-           
+
+
         </nav>
 
     </header>
@@ -45,8 +122,8 @@
     <section class="main-section-slider">
         <div class="main-section-container-slider">
             <div class="contenedor-slider-titulo">
-                <h1>Cocinas de Sucre</h1>
-                <p>La mejor en toda Colombia</p>
+                <!-- <h1>Cocinas de Sucre</h1> -->
+                <p>Todos Nuestros trabajos en esta sección</p>
                 <a href="">Mas información..</a>
 
             </div>
@@ -59,33 +136,96 @@
 
         <section class="main-section-grid">
             <div class="main-container-grid">
-                
+
+                <article class="main-container-article">
+                    <a href="seccion-proyecto.html">
+                        <img src="img/img-proyectos/imagen3.jpeg" alt="trabajo de nuestro proyecto">
+
+                    </a>
+                </article>
+                <article class="main-container-article">
+                    <a href="">
+                        <img src="img/img-proyectos/imagen2.jpeg" alt="trabajo de nuestro proyecto">
+
+                    </a>
+                </article>
+                <article class="main-container-article">
+                    <a href="">
+                        <img src="img/img-proyectos/imagen10.jpeg" alt="trabajo de nuestro proyecto">
+
+                    </a>
+                </article>
+                <article class="main-container-article">
+                    <a href="">
+                        <img src="img/img-proyectos/imagen11.jpeg" alt="trabajo de nuestro proyecto">
+
+                    </a>
+                </article>
+                <article class="main-container-article">
+                    <a href="">
+                        <img src="img/img-proyectos/imagen12.jpeg" alt="trabajo de nuestro proyecto">
+
+                    </a>
+                </article>
+                <article class="main-container-article">
+                    <a href="">
+                        <img src="img/img-proyectos/imagen13.jpeg" alt="trabajo de nuestro proyecto">
+
+                    </a>
+                </article>
+                <article class="main-container-article">
+                    <a href="">
+                        <img src="img/img-proyectos/imagen14.jpeg" alt="trabajo de nuestro proyecto">
+
+                    </a>
+                </article>
+                <article class="main-container-article">
+                    <a href="">
+                        <img src="img/img-proyectos/imagen15.jpeg" alt="trabajo de nuestro proyecto">
+
+                    </a>
+                </article>
+                <article class="main-container-article">
+                    <a href="">
+                        <img src="img/img-proyectos/imagen17.jpeg" alt="trabajo de nuestro proyecto">
+
+                    </a>
+                </article>
+                <article class="main-container-article">
+                    <a href="">
+                        <img src="img/img-proyectos/imagen19.jpeg" alt="trabajo de nuestro proyecto">
+
+                    </a>
+                </article>
+
+
+
             </div>
         </section>
-        
-        
+
+
     </main>
     <footer>
         <div class="container-flex">
             <section class="container-flex__section">
                 <img src="img/logo.png" alt="logo de la entidad">
-    
+
             </section>
-            <section class="container-flex__section-redes" >
-    
+            <section class="container-flex__section-redes">
+
                 <div class="redes">
                     <span>Siganos en:</span>
                     <i class="bi bi-whatsapp">
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-facebook"></i>
-                    <i class="bi bi-youtube"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-youtube"></i>
                     </i>
                 </div>
             </section>
             <p>Copyright © 2020 Publicaciones Semana S.A.
                 con NIT 860.509.265 -1.</p>
         </div>
-        
+
     </footer>
 
 
