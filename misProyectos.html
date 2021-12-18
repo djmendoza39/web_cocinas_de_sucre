@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseño de interiores Sincelejo</title>
+    <title>Nuestros proyectos</title>
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/table2.css" media="(min-width:588px)">
     <link rel="stylesheet" href="./css/desktop2.css" media="(min-width:788px">
@@ -14,9 +14,101 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <style>
+
+        .main-container-seccion-card{
+            width: 100%;
+            height: auto;
+            background-color: rgba(204, 201, 198, 0.623);
+        }
+
+        .container-card{
+            width: 80%;
+            height: auto;
+            margin: 0 auto;
+            padding-top: 5rem;
+            padding-bottom: 4rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            
+            
+        }
+
+        .container-card .card{
+            
+            width: 300px;
+            height: 400px; 
+            transform-style: preserve-3d;
+            position: relative;
+            /* box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14) , 0px 3px 1px -2px rgba(0,0,0,0.12) , 0px 1px 5px 0px rgba(0,0,0,0.2); */
+            
+            
+
+        }
+
+        .container-card .card-face{
+            
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color:#ffffff;
+            width: 100%;
+            height: 100%; 
+            display: flex;
+            justify-content: center;
+            transform-style: preserve-3d;
+            align-items: center;
+            backface-visibility: hidden;
+        transition: 1s ease-in-out;
+        transform: perspective(500px) rotateY(0deg);
+        box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14) , 0px 3px 1px -2px rgba(0,0,0,0.12) , 0px 1px 5px 0px rgba(0,0,0,0.2);
+            
+
+        }
+
+        .card:hover .front{
+
+            transform: perspective(500px) rotateY(180deg);
+        }
+
+        .card .back{
+            background-color: rgba(243, 173, 11, 0.26);
+            transform: perspective(500px) rotateY(180deg);
+        }
+
+        .card:hover .back{
+
+            transform: perspective(500px) rotateY(360deg);
+        }
+
+        .card:hover .back a{
+            
+            transform: perspective(500px) translateZ(50px);
+        }
+        .card .card-face .contenedor-img{
+            width: 78%;
+            margin: 0;
+        }
+        .card .card-face .contenedor-img img{
+            width: 100%;
+        }
+
+        .card .back{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .card .back a{
+            display: inline-block;
+            padding: 1rem;
+            background-color: yellowgreen;
+            border-radius: 10px;
+        }
         
 
-        .main-section-grid {
+        /* .main-section-grid {
             width: 100%;
             height: auto;
 
@@ -86,7 +178,7 @@
 
 
 
-        }
+        } */
     </style>
 </head>
 
@@ -134,7 +226,147 @@
     <!-- cuerpo principal del sitio web -->
     <main>
 
-        <section class="main-section-grid">
+        <section class="main-container-seccion-card">
+            <section class="container-card">
+                <div class="card">
+                    <div class="card-face front">
+                        <figure class="contenedor-img">
+                            <img src="img/img-proyectos/imagen12.jpeg" alt="trabajos de nuestros proyectos">
+                        </figure>
+                        <!-- <h2>FRONT</h2> -->
+                    </div>
+                    <div class="card-face back">
+                        <h2>Para mas información</h2>
+                        <a href="seccion-proyecto.html">Presiona aquí...</a>
+                        
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="card-face front">
+                        <figure class="contenedor-img">
+                            <img src="img/img-proyectos/imagen13.jpeg" alt="trabajos de nuestros proyectos">
+                        </figure>
+                        <!-- <h2>FRONT</h2> -->
+                    </div>
+                    <div class="card-face back">
+                        <h2>Para mas información</h2>
+                        <a href="seccion-proyecto.html">Presiona aquí...</a>
+                        
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="card-face front">
+                        <figure class="contenedor-img">
+                            <img src="img/img-proyectos/imagen4.jpeg" alt="trabajos de nuestros proyectos">
+                        </figure>
+                        <!-- <h2>FRONT</h2> -->
+                    </div>
+                    <div class="card-face back">
+                        <h2>Para mas información</h2>
+                        <a href="seccion-proyecto.html">Presiona aquí...</a>
+                        
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="card-face front">
+                        <figure class="contenedor-img">
+                            <img src="img/img-proyectos/imagen17.jpeg" alt="trabajos de nuestros proyectos">
+                        </figure>
+                        <!-- <h2>FRONT</h2> -->
+                    </div>
+                    <div class="card-face back">
+                        <h2>Para mas información</h2>
+                        <a href="seccion-proyecto.html">Presiona aquí...</a>
+                        
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="card-face front">
+                        <figure class="contenedor-img">
+                            <img src="img/img-proyectos/imagen18.jpeg" alt="trabajos de nuestros proyectos">
+                        </figure>
+                        <!-- <h2>FRONT</h2> -->
+                    </div>
+                    <div class="card-face back">
+                        <h2>Para mas información</h2>
+                        <a href="seccion-proyecto.html">Presiona aquí...</a>
+                        
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="card-face front">
+                        <figure class="contenedor-img">
+                            <img src="img/img-proyectos/imagen22.jpeg" alt="trabajos de nuestros proyectos">
+                        </figure>
+                        <!-- <h2>FRONT</h2> -->
+                    </div>
+                    <div class="card-face back">
+                        <h2>Para mas información</h2>
+                        <a href="seccion-proyecto.html">Presiona aquí...</a>
+                        
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="card-face front">
+                        <figure class="contenedor-img">
+                            <img src="img/img-proyectos/imagen23.jpeg" alt="trabajos de nuestros proyectos">
+                        </figure>
+                        <!-- <h2>FRONT</h2> -->
+                    </div>
+                    <div class="card-face back">
+                        <h2>Para mas información</h2>
+                        <a href="seccion-proyecto.html">Presiona aquí...</a>
+                        
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="card-face front">
+                        <figure class="contenedor-img">
+                            <img src="img/img-proyectos/imagen3.jpeg" alt="trabajos de nuestros proyectos">
+                        </figure>
+                        <!-- <h2>FRONT</h2> -->
+                    </div>
+                    <div class="card-face back">
+                        <h2>Para mas información</h2>
+                        <a href="seccion-proyecto.html">Presiona aquí...</a>
+                        
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="card-face front">
+                        <figure class="contenedor-img">
+                            <img src="img/img-proyectos/imagen2.jpeg" alt="trabajos de nuestros proyectos">
+                        </figure>
+                        <!-- <h2>FRONT</h2> -->
+                    </div>
+                    <div class="card-face back">
+                        <h2>Para mas información</h2>
+                        <a href="seccion-proyecto.html">Presiona aquí...</a>
+                        
+                    </div>
+
+                </div>
+
+                
+            </section>
+        </section>
+
+        <!-- <section class="main-section-grid">
             <div class="main-container-grid">
 
                 <article class="main-container-article">
@@ -201,7 +433,7 @@
 
 
             </div>
-        </section>
+        </section> -->
 
 
     </main>
